@@ -1,0 +1,198 @@
+HTML CSSResult Skip Results Iframe 
+EDIT ON 
+body {
+ margin: 40px;
+}
+:root 
+{
+ --dark: #13293d;
+ --light: #fff;
+ --border: 15px; 
+ --blue: rgb(30, 30, 116); 
+
+}
+/* grid-area:: assigns each class to a section on the grid*/
+ .sidebar {
+   grid-area: sidebar;
+   border-right: thick solid var(--dark);
+ }
+ .sidebar1{
+   grid-area: sidebar1;
+   border-right: thick solid var(--dark);
+ }
+
+ .content {
+   grid-area: content;
+ }
+ .content1{
+   grid-area: content1;
+ }
+
+ .header {
+   grid-area: header;
+   background: url(images/code_background.jpg); 
+ }
+
+ .footer {
+   grid-area: footer;
+   border-right: thick solid var(--dark);
+ }
+ .footer_content{
+   grid-area:footer_content; 
+ }
+
+/*wrapper:: used grid to layout each section (assigned above) on the grid*/ 
+.wrapper {
+ display: grid;
+ grid-gap: 50px;
+ grid-template-columns: 230px 120px 120px;
+ grid-template-areas:
+  "header header header header"
+  "sidebar content content content"
+  "sidebar1 content1 content1 content1"
+  "footer  footer_content footer_content footer_content";
+ background-color:var(--light);
+ color: #444;
+ /* padding-left: 8%; */
+}
+
+
+.box {
+ background-color: var(--light);
+ color: var(--blue);
+ /* border-radius: 5px; */
+ padding: 10px;
+ /* font-size: 150%; */
+}
+
+.header {
+ background-color: #999;
+}
+
+/*Header styling*/
+   .header > h1
+   {
+       display: inline-block;
+       font-size: 3vw;
+       color:var(--light);
+        /*Ensures that name is indented*/
+       padding-left: 3%;
+   }
+   nav
+   {
+       /*position navigation bar to right*/
+       float:right;
+       margin-right: 20px;
+   } 
+   nav > ul > a
+   {
+       display: inline-block;
+       /*ensures no underline is shown*/ 
+       text-decoration:none; 
+       /*sets the color to white*/ 
+       color:white; 
+       /*padding between text*/ 
+       padding-right:30px ;
+       /*aligns with header by adding a small amount of padding*/
+       padding-top: 9%;
+       font-size: 2vw;
+   }
+
+
+/* Side-bar:: styling side-bar titles*/
+   #section_title
+   {
+     font-size: 4vw;
+     color:var(--dark); 
+     text-align: right; 
+   }
+   
+/*About Me*/ 
+   /* Styled in a rounded shape  */
+   /*Position profile picture to the right*/
+   img.right 
+   {
+       border-radius: 50%;
+       float:right; 
+       padding:5px;
+       width: 300px;
+       height: 330px; 
+   }
+   figure
+   {
+       background-image: url(images/work_0.jpg);
+   }
+   #aboutMe_content
+   {
+       font-size: 2vw; 
+   }
+/* Contact Info */
+   #contactMe_info
+   {
+       color:black; 
+       font-size: 3vw;
+       text-decoration: underline;
+       text-decoration-color: var(--dark);
+       padding-right: 5%;
+   }
+/* Work */
+   /* Big image:: sets the position of the box */
+   .text_box {
+       position: absolute; 
+       bottom: 1%; 
+       left: 3%; 
+       color:white;
+       font-size: 3vw;
+   }
+   /* big image at top*/
+   .img_top
+   {
+       width:100%;
+       position:relative;  
+       /*included margin and padding to align with 
+       smaller images below */
+       margin:2%; 
+       padding:1.5%; 
+   }
+   .img_topImg 
+   {
+       width:100%; 
+   } 
+   /* Images below top */
+   .img_bottomImg
+   {
+       width:90%; 
+       margin:2%; 
+       padding:5%; 
+   }
+   /* images on te left side */
+   .imgLeft_position 
+   {
+       position:relative; 
+       float:left; 
+       text-align: center;
+       width:50%; 
+   }
+   /* images on te right side */
+   .imgRight_position 
+   {
+       position: relative;
+       float:right; 
+       text-align: center;
+       width:50%; 
+   }
+   /* text set to smaller images */
+   .text_box1 {
+       position: absolute;
+       bottom: 40%;
+       left: 35%;
+       color:purple;  
+       font-size: 3vw;
+   }
+   
+
+
+
+
+
+
