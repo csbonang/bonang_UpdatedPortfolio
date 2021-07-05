@@ -6,6 +6,9 @@
            <!-- viewport: Ensures that when I resize the page or view the site on various screens and devices
                 then I am presented with a responsive layout that adapts to my viewport-->
            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <!-- Referenced W3 schools for the photo card  -->
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
            <title>Portfolio</title>
            <link rel="stylesheet" href="style.css"> 
         </head>
@@ -18,7 +21,7 @@
                 <ul>  
                     <a href= "#AboutMe_Section"> About Me </a>
                     <a href= "#Work_Section"> Work </a>
-                    <a href= "#ContactMe_Section"> Contact Me </a>
+                    <a href= "#contactMe_background"> Contact Me </a>
                 </ul>
             </nav>
         </div>
@@ -50,53 +53,97 @@
                 The projects displayed below include projects focused on web development, 
                 rate monotonic schedulers, a technical report, note-taking application, 
                 and more. 
+                <a href="resume_master.docx.pdf" id="resume"> Resume</a>
             </article>
         </div>
     <!--Work:: a section of the page that includes the developer's projects. 
                Each deployed application project can be accessed by clicking its titled image. -->
-    <div class="box content1">
+    <!-- <div class="box content1"> -->
+    <div class="content1">
         <article id="work_content">
                 <!--Largest image in work section to adhere to requirements -->
                 <div class="img_top">
-                    <a href="https://github.com/bonang8" target="_blank">
-                            <img class= "img_topImg"src="https://code.org/shared/images/social-media/codeorg2020_social.png" alt= "Work1 Image"> 
-                            <h2 class="text_box">Repository</h2> 
+                    <a href="https://ahuffma2.github.io/comics-assembled/" target="_blank">
+                            <img class= "img_topImg"src="images/project1.jpg" alt= "Work1 Image"> 
+                            <!-- <h2 class="text_box">Repository</h2>  -->
                     </a>
+                    <div class="w3-container w3-center" id="img_title">
+                        <h1><b>Comics Assembled</b></h1>
+                        <p>Comic's Assembled is a website that allows users to search for their 
+                            favorite comics they love, or to jump into comics if they've never read 
+                            any before with the latest events and movies with links on where to find 
+                            them. </p> 
+                            <!-- https://github.com/ahuffma2/comics-assembled -->
+                        <h2> <a href= "https://github.com/ahuffma2/comics-assembled"> GitHub </a></h2>
+                      </div>
                 </div>
                 <div class="imgLeft_position">
-                    <a href="https://github.com/bonang8/rateMonotonicScheduler"  target="_blank">
-                        <img class= "img_bottomImg" src= "images/work_4.webp" alt= "Work2 Image">
-                        <h2 class= "text_box1">RMS Code</h2>
+                    <a href="https://csbonang.github.io/bonang_CodeQuiz/"  target="_blank">
+                        <img class= "img_bottomImg" src= "images/code_quiz.PNG" alt= "Work2 Image">
+                        <!-- <h2 class= "text_box1">RMS Code</h2> -->
                     </a>
+                    <div class="w3-container w3-center" id="img_title1">
+                        <h1><b>Code Quiz</b></h1>
+                        <p> Code Quiz allows users to answer the questions under 
+                           a time limit, saves their score, and displays a scoreboard ordered from highest to lowest.
+                        </p> 
+                            <!-- https://github.com/ahuffma2/comics-assembled -->
+                        <h2> <a href= "https://github.com/csbonang/bonang_CodeQuiz"> GitHub </a></h2>
+                      </div>
                 </div> 
                 <div class="imgRight_position">
-                    <a href="https://github.com/lisaqpham/SudokuValidator" target="_blank"> 
-                            <img class= "img_bottomImg" src= "images/work_4.webp" alt= "Work2 Image">
-                            <h2 class="text_box1">Sudoku Code</h2>
+                    <a href="https://csbonang.github.io/bonang_workScheduler/" target="_blank"> 
+                            <img class= "img_bottomImg" src= "images/work_day.png" alt= "Work2 Image">
+                            <!-- <h2 class="text_box1">Sudoku Code</h2> -->
                     </a>
+                    <div class="w3-container w3-center" id="img_title1">
+                        <h1><b>Day Planner</b></h1>
+                        <p> Users can edit, save, and update their planner. 
+                        </p> 
+                            <!-- https://github.com/ahuffma2/comics-assembled -->
+                        <br> 
+                        <h2> <a href= "https://github.com/csbonang/bonang_workScheduler"> GitHub </a></h2>
+                      </div>
                 </div> 
                 <div class="imgRight_position">
-                    <a href="https://github.com/bonang8/Assignment_5" target="_blank">
-                        <img class= "img_bottomImg" src= "images/work_5.jpg" alt= "Work3 Image">
-                        <h2 class="text_box1">Game of Life</h2>
+                    <a href="https://csbonang.github.io/bonang_PasswordGenerator/" target="_blank">
+                        <img class= "img_bottomImg" src= "images/pass_generator.png" alt= "Work3 Image">
+                        <!-- <h2 class="text_box1">Game of Life</h2> -->
                     </a>
+                    <div class="w3-container w3-center" id="img_title1">
+                        <h1><b>Password Generator</b></h1>
+                        <p> The password generator application generates a password given the users input 
+                        </p> 
+                            <!-- https://github.com/ahuffma2/comics-assembled -->
+                        <h2> <a href= "https://github.com/csbonang/bonang_PasswordGenerator"> GitHub </a></h2>
+                      </div>
                 </div>
                 <div class="imgLeft_position">
-                    <a href="https://github.com/csbonang/Code_Refactor-" target="_blank">
-                        <img class= "img_bottomImg" src= "images/work_5.jpg" alt= "Work3 Image">
-                        <h2 class ="text_box1">Refactor Code</h2>
+                    <a href="https://csbonang.github.io/Code_Refactor-/" target="_blank">
+                        <img class= "img_bottomImg" src= "images/refactor_code2.PNG" alt= "Work3 Image">
+                        <!-- <h2 class ="text_box1">Refactor Code</h2> -->
                     </a>
+                    <div class="w3-container w3-center" id="img_title1">
+                        <br> <br>
+                        <h1><b>Code Refector</b></h1> 
+                        <p> 
+                            Refactors existing code that includes semantic HTML elements, follows a logical structure independent of styling and positioning.
+                            
+                        </p> 
+                            <!-- https://github.com/ahuffma2/comics-assembled -->
+                        <h2> <a href= "https://github.com/csbonang/Code_Refactor-"> GitHub </a></h2>
+                      </div>
                 </div> 
                 
         </article>
       </div>
       <!-- Contact Me:: Includes information to contact the developer -->
-    <div class="box footer" id="ContactMe_Section" >
+    <div class="box footer" id="contactMe_background" >
         <div>
             <h1 id="section_title">Contact Me</h1>
         </div> 
     </div>
-    <div class="box footer_content">
+    <div class="box footer_content" id="footer_background">
         <p> 
             <a id="contactMe_info" href = "mailto:csgbonang@gmail.com?subject = Feedback&body = Message" alt=Email>
                 Email Me

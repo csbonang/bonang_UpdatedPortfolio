@@ -1,5 +1,6 @@
 HTML CSSResult Skip Results Iframe 
 EDIT ON 
+
 body {
  margin: 40px;
 }
@@ -9,23 +10,41 @@ body {
  --light: #fff;
  --border: 15px; 
  --blue: rgb(30, 30, 116); 
+ /* monochromatic tones of blue */
+ --pastelBlue: #aec6cf;
+ --lightBlue: #dee8eb;
+ --darkPastel: #7ea4b3; 
+ --midPastel: #8eafbc; 
+ /* --brown: #cfb7ae;  */
+/* black brown color palette */
+--dark_blue_black: #293249; 
+--gray_brown: #69656f; 
+--gray_pink: #aca1a1; 
+--beige: #ded2cf; 
+--pink: #f7efed; 
+
 
 }
 /* grid-area:: assigns each class to a section on the grid*/
  .sidebar {
    grid-area: sidebar;
-   border-right: thick solid var(--dark);
+   border-right: thick solid var(--pink);
  }
  .sidebar1{
    grid-area: sidebar1;
-   border-right: thick solid var(--dark);
+   border-right: thick solid var(--pink);
  }
 
  .content {
    grid-area: content;
+   border-radius: 25px;
+  
  }
+
  .content1{
    grid-area: content1;
+   border-radius: 25px;
+
  }
 
  .header {
@@ -35,7 +54,7 @@ body {
 
  .footer {
    grid-area: footer;
-   border-right: thick solid var(--dark);
+   border-right: thick solid var(--pink);
  }
  .footer_content{
    grid-area:footer_content; 
@@ -51,8 +70,8 @@ body {
   "sidebar content content content"
   "sidebar1 content1 content1 content1"
   "footer  footer_content footer_content footer_content";
- background-color:var(--light);
- color: #444;
+/* sets background color for whole website */
+ background-color: var(--gray_brown); 
  /* padding-left: 8%; */
 }
 
@@ -98,13 +117,20 @@ body {
        font-size: 2vw;
    }
 
+   /* changes the color of the about me and work side bar section */
+   #AboutMe_Section, #Work_Section
+   {
+     background-color: transparent;
+   }
+  
 
 /* Side-bar:: styling side-bar titles*/
    #section_title
    {
      font-size: 4vw;
-     color:var(--dark); 
+     color:var(--pink); 
      text-align: right; 
+     
    }
    
 /*About Me*/ 
@@ -124,7 +150,9 @@ body {
    }
    #aboutMe_content
    {
-       font-size: 2vw; 
+       font-size: 1.5vw; 
+       font-weight:normal; 
+       color:var(--gray_brown); 
    }
 /* Contact Info */
    #contactMe_info
@@ -132,8 +160,9 @@ body {
        color:black; 
        font-size: 3vw;
        text-decoration: underline;
-       text-decoration-color: var(--dark);
+       text-decoration-color: var(--pink); 
        padding-right: 5%;
+       /* background-color: transparent; */
    }
 /* Work */
    /* Big image:: sets the position of the box */
@@ -152,18 +181,31 @@ body {
        /*included margin and padding to align with 
        smaller images below */
        margin:2%; 
-       padding:1.5%; 
+       padding:1%; 
+       /* background-color:black;  */
+       background-color: var(--gray_pink);
+       border-radius: 25px;
    }
+   .img_top:hover
+   {
+     border-radius: 3vw;
+     /* background-color:rgb(136, 135, 135); */
+     background-color: var(--beige);
+   }
+   
    .img_topImg 
    {
        width:100%; 
+       border-radius: 25px;
    } 
+
    /* Images below top */
    .img_bottomImg
    {
        width:90%; 
        margin:2%; 
        padding:5%; 
+
    }
    /* images on te left side */
    .imgLeft_position 
@@ -172,7 +214,17 @@ body {
        float:left; 
        text-align: center;
        width:50%; 
+       /* background-color:black;  */
+       background-color: var(--gray_pink);
+       border-radius: 3vw;
    }
+   .imgLeft_position:hover
+   {
+     border-radius: 3vw;
+     /* background-color:rgb(136, 135, 135); */
+     background-color: var(--beige);
+   }
+   
    /* images on te right side */
    .imgRight_position 
    {
@@ -180,7 +232,17 @@ body {
        float:right; 
        text-align: center;
        width:50%; 
+       /* background-color:black;  */
+       background-color: var(--gray_pink);
+       border-radius: 3vw;
    }
+   .imgRight_position:hover
+   {
+     border-radius: 3vw;
+     /* background-color:rgb(136, 135, 135); */
+     background-color: var(--beige);
+   }
+   
    /* text set to smaller images */
    .text_box1 {
        position: absolute;
@@ -189,7 +251,31 @@ body {
        color:purple;  
        font-size: 3vw;
    }
-   
+   /*Image information/titles */
+   #img_title
+   {
+     background-color:transparent;
+     color: white; 
+     font-size: x-large;
+     box-shadow: black;
+   }
+   #img_title1
+   {
+     background-color:transparent;
+     color: white; 
+     font-size: small; 
+     box-shadow: black;
+   }
+   #footer_background, #contactMe_background
+   {
+     background-color: transparent; 
+   }
+   #resume 
+   {
+     color:var(--gray_pink); 
+     text-decoration: none;
+     font-weight: bold;
+   }
 
 
 
