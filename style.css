@@ -200,9 +200,10 @@ body {
    } 
 
    /* Images below top */
+   /* TODO: ensure all img have same size  */
    .img_bottomImg
    {
-       width:90%; 
+       width:90%;
        margin:2%; 
        padding:5%; 
 
@@ -220,8 +221,6 @@ body {
    }
    .imgLeft_position:hover
    {
-     border-radius: 3vw;
-     /* background-color:rgb(136, 135, 135); */
      background-color: var(--beige);
    }
    
@@ -236,10 +235,18 @@ body {
        background-color: var(--gray_pink);
        border-radius: 3vw;
    }
+   .imgRight_position2
+   {
+       position: relative;
+       float:right; 
+       text-align: center;
+       width:50%; 
+       /* background-color:black;  */
+       background-color: var(--gray_pink);
+       border-radius: 3vw;
+   }
    .imgRight_position:hover
    {
-     border-radius: 3vw;
-     /* background-color:rgb(136, 135, 135); */
      background-color: var(--beige);
    }
    
@@ -282,9 +289,128 @@ body {
 
 
    /* set all images to the same size */
+ 
+   @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .header {
+      grid-area: header;
+      background: url(images/code_background.jpg);
+      width: 100vw; 
+    }
+    /*wrapper:: used grid to layout each section (assigned above) on the grid*/ 
+      .wrapper {
+        display: grid;
+        grid-gap: 3vw;
+        grid-template-columns: 35vw 35vw; 
+        grid-template-areas:
+        "header"
+        "sidebar content content content"
+        "sidebar1 content1 content1 content1"
+        "footer  footer_content footer_content footer_content";
+      /* sets background color for whole website */
+        background-color: var(--gray_brown); 
+        /* padding-left: 8%; */
+      }
+      img.right 
+   {
+       border-radius: 50%;
+       float:right; 
+       padding:2vw;
+       width: 15vw; 
+       height: 15vw; 
+   }
+   .content {
+    grid-area: content;
+    border-radius: 2vw;
+    width: 60vw;
+   
+  }
+  /* ensures that work of projects are sized just right */
+   .img_top
+   {
+       /* width:100%; */
+       width:60vw; 
+       position:relative;    
+       /*included margin and padding to align with 
+       smaller images below */
+       margin:0.2vw; 
+       padding:1vw; 
+       /* background-color:black;  */
+       background-color: var(--gray_pink);
+       border-radius: 1.5vw; 
+   }
+   .img_bottomImg
+   {
+      /* width:100%; */
+      width:60vw; 
+      position:relative;    
+      /*included margin and padding to align with 
+      smaller images below */
+      margin:0.2vw; 
+      padding:1vw; 
+      /* background-color:black;  */
+      /* background-color: var(--gray_pink); */
+      border-radius: 1vw; 
+   }
+
+
+    /* images on te left side */
+    .imgLeft_position 
+    {
+        position:relative; 
+        float:left; 
+        text-align: center;
+        width:60vw; 
+        /* background-color:black;  */
+        background-color: var(--gray_pink);
+        border-radius: 3vw;
+        font-size: smaller;
+    }
+    .imgLeft_position:hover
+    {
+      background-color: var(--beige);
+    }
+    .imgRight_position 
+    {
+        position:relative; 
+        float:left; 
+        text-align: center;
+        width:60vw; 
+        /* background-color:black;  */
+        background-color: var(--gray_pink);
+        border-radius: 3vw;
+        font-size: smaller;
+    }
+    .imgLeft_position:hover
+    {
+      background-color: var(--beige);
+    }
+
+
+   #img_title
+   {
+     background-color:transparent;
+     color: white; 
+     font-size: smaller;
+     box-shadow: black;
+   }
+   #img_title1
+   {
+     background-color:transparent;
+     color: white; 
+     font-size: smaller; 
+     box-shadow: black;
+   }
 
 
 
 
 
+  }
+
+
+
+
+  
+ 
 
