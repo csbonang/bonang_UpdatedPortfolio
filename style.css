@@ -287,123 +287,120 @@ body {
 
    
    /* ensures mobile first  */
-   /* iphone 6,7,8, iphone X, iphone Plus*/
+      /* iphone 6,7,8, iphone X, iphone Plus*/
    @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    .header {
-      grid-area: header;
-      background: url(images/code_background.jpg);
-      width: 100vw; 
-    }
-    /*wrapper:: used grid to layout each section (assigned above) on the grid*/ 
-      .wrapper {
-        display: grid;
-        grid-gap: 3vw;
-        grid-template-columns: 35vw 35vw; 
-        grid-template-areas:
-        "header"
-        "sidebar content content content"
-        "sidebar1 content1 content1 content1"
-        "footer  footer_content footer_content footer_content";
-      /* sets background color for whole website */
-        background-color: var(--gray_brown); 
-        /* padding-left: 8%; */
+      .header {
+        grid-area: header;
+        background: url(images/code_background.jpg);
+        width: 100vw; 
       }
-      img.right 
-   {
-       border-radius: 50%;
-       float:right; 
-       padding:2vw;
-       width: 15vw; 
-       height: 15vw; 
-   }
-   .content {
-    grid-area: content;
-    border-radius: 2vw;
-    width: 60vw;
-   
-  }
-  /* ensures that work of projects are sized just right */
-   .img_top
-   {
-       /* width:100%; */
-       width:60vw; 
-       position:relative;    
-       /*included margin and padding to align with 
-       smaller images below */
-       margin:0.2vw; 
-       padding:1vw; 
-       /* background-color:black;  */
-       background-color: var(--gray_pink);
-       border-radius: 1.5vw; 
-   }
-   .img_bottomImg
-   {
-      /* width:100%; */
-      width:60vw; 
-      position:relative;    
-      /*included margin and padding to align with 
-      smaller images below */
-      margin:0.2vw; 
-      padding:1vw; 
-      /* background-color:black;  */
-      /* background-color: var(--gray_pink); */
-      border-radius: 1vw; 
-   }
+      /*wrapper:: used grid to layout each section (assigned above) on the grid*/ 
+      /* To ensure that it is mobile first I updated 303. Stylisyically, displaying the 
+         work projects in rows instead of columns is beneficial. */
+        .wrapper {
+          display: grid;
+          grid-gap: 3vw;
+          grid-template-columns: 35vw 35vw; 
+          grid-template-areas:
+          "header"
+          "sidebar content content content"
+          "sidebar1 content1 content1 content1"
+          "footer  footer_content footer_content footer_content";
+        /* sets background color for whole website */
+          background-color: var(--gray_brown); 
+          /* padding-left: 8%; */
+        }
+        img.right 
+    {
+        border-radius: 50%;
+        float:right; 
+        padding:2vw;
+        width: 15vw; 
+        height: 15vw; 
+    }
+    .content {
+      grid-area: content;
+      border-radius: 2vw;
+      width: 60vw;
+    
+    }
+    /* ensures that work of projects are sized just right */
+    .img_top
+    {
+        /* width:100%; */
+        width:60vw; 
+        position:relative;    
+        /*included margin and padding to align with 
+        smaller images below */
+        margin:0.2vw; 
+        padding:1vw; 
+        /* background-color:black;  */
+        background-color: var(--gray_pink);
+        border-radius: 1.5vw; 
+    }
+    .img_bottomImg
+    {
+        /* width:100%; */
+        width:60vw; 
+        position:relative;    
+        /*included margin and padding to align with 
+        smaller images below */
+        margin:0.2vw; 
+        padding:1vw; 
+        /* background-color:black;  */
+        /* background-color: var(--gray_pink); */
+        border-radius: 1vw; 
+    }
 
 
     /* images on te left side */
-    .imgLeft_position 
-    {
-        position:relative; 
-        float:left; 
-        text-align: center;
-        width:60vw; 
-        /* background-color:black;  */
-        background-color: var(--gray_pink);
-        border-radius: 3vw;
-        font-size: smaller;
-    }
-    .imgLeft_position:hover
-    {
-      background-color: var(--beige);
-    }
+      .imgLeft_position 
+      {
+          position:relative; 
+          float:left; 
+          text-align: center;
+          width:60vw; 
+          /* background-color:black;  */
+          background-color: var(--gray_pink);
+          border-radius: 3vw;
+          font-size: smaller;
+      }
+      .imgLeft_position:hover
+      {
+        background-color: var(--beige);
+      }
+    /* images on te right side */
     .imgRight_position 
+      {
+          position:relative; 
+          float:left; 
+          text-align: center;
+          width:60vw; 
+          /* background-color:black;  */
+          background-color: var(--gray_pink);
+          border-radius: 3vw;
+          font-size: smaller;
+      }
+      .imgLeft_position:hover
+      {
+        background-color: var(--beige);
+      }
+
+    #img_title
     {
-        position:relative; 
-        float:left; 
-        text-align: center;
-        width:60vw; 
-        /* background-color:black;  */
-        background-color: var(--gray_pink);
-        border-radius: 3vw;
-        font-size: smaller;
+      background-color:transparent;
+      color: white; 
+      font-size: smaller;
+      box-shadow: black;
     }
-    .imgLeft_position:hover
+    #img_title1
     {
-      background-color: var(--beige);
+      background-color:transparent;
+      color: white; 
+      font-size: smaller; 
+      box-shadow: black;
     }
-
-
-   #img_title
-   {
-     background-color:transparent;
-     color: white; 
-     font-size: smaller;
-     box-shadow: black;
-   }
-   #img_title1
-   {
-     background-color:transparent;
-     color: white; 
-     font-size: smaller; 
-     box-shadow: black;
-   }
-
-
-
-
-
   }
 
 
