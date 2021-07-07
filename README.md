@@ -1,4 +1,4 @@
-# Bonang_CSS_Portfolio
+# Portfolio
 Programmer: Clarisse Bonang <br/>
 Deployed link: https://csbonang.github.io/bonang_UpdatedPortfolio/
 
