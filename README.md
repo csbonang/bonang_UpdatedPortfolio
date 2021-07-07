@@ -2,6 +2,12 @@
 Programmer: Clarisse Bonang <br/>
 Deployed link: https://csbonang.github.io/bonang_UpdatedPortfolio/
 
+## Table of Contents 
+* [Description](#description)
+* [Structure](#structure)
+* [Screenshot](#screenshot)
+* [License](#license)
+
 # Description 
 The program displays a portfolio of my project highlights in web development. It satisfies the following requirements: 
 
@@ -29,11 +35,11 @@ Every section and associated information is displayed in rows to adhere to mobil
 frame restrictions and design. 
 
 # Screenshot 
-Wedsite:  ![Page1](https://github.com/csbonang/bonang_UpdatedPortfolio/blob/main/images/web_1.PNG)
-Wedsite continued: ![Page2](https://github.com/csbonang/bonang_UpdatedPortfolio/blob/main/images/web_2.PNG)
-Wedsite continued: ![Page3](https://github.com/csbonang/bonang_UpdatedPortfolio/blob/main/images/web_3.PNG)
-Wedsite continued: ![Page4](https://github.com/csbonang/bonang_UpdatedPortfolio/blob/main/images/web_4.PNG)
-Mobile: ![Page2](https://github.com/csbonang/bonang_UpdatedPortfolio/blob/main/images/mobile_page.PNG)
+Website:  ![Page1](images/web_1.PNG)
+Wedsite continued: ![Page2](images/web_2.PNG)
+Wedsite continued: ![Page3](images/web_3.PNG)
+Wedsite continued: ![Page4](images/web_4.PNG)
+Mobile: ![Page2](images/mobile_page.PNG)
 
 # Note 
 Upon hover, color changes for each project under the work section.
@@ -51,3 +57,21 @@ https://www.w3schools.com/html/html_images.asp<br/>
 Image Text Position: 
 https://www.w3schools.com/howto/howto_css_image_text.asp<br> 
 Activities from class 
+
+# License 
+Copyright (c) [2021] [Clarisse Bonang]
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
