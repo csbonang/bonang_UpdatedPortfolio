@@ -29,8 +29,14 @@ Every section and associated information is displayed in rows to adhere to mobil
 frame restrictions and design. 
 
 # Screenshot 
-Top: ![Page1](https://github.com/csbonang/Bonang_CSS_Portfolio/blob/main/images/snapshot_1.PNG)
-Bottom: ![Page2](https://github.com/csbonang/Bonang_CSS_Portfolio/blob/main/images/snapshot_2.PNG)
+Wedsite:  ![Page1](https://github.com/csbonang/bonang_UpdatedPortfolio/blob/main/images/web_1.PNG)
+Wedsite continued: ![Page2](https://github.com/csbonang/bonang_UpdatedPortfolio/blob/main/images/web_2.PNG)
+Wedsite continued: ![Page3](https://github.com/csbonang/bonang_UpdatedPortfolio/blob/main/images/web_3.PNG)
+Wedsite continued: ![Page4](https://github.com/csbonang/bonang_UpdatedPortfolio/blob/main/images/web_4.PNG)
+Mobile: ![Page2](https://github.com/csbonang/bonang_UpdatedPortfolio/blob/main/images/mobile_page.PNG)
+
+# Note 
+Upon hover, color changes for each project under the work section.
 <br/>
 Please note that the user must login to their email account. 
 Then, the following image below will appear once they click Email Me under the Contact Me section. 
